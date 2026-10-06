@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnesstrackerproject">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".profile_page"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".update_profile_page"
+            android:parentActivityName=".profile_page" />
+
+        <activity android:name=".diary_main_page"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".daily_diary_entry"
+            android:parentActivityName=".diary_main_page"/>
+
+        <activity android:name=".addToBreakfastListPage"/>
+
+        <activity android:name=".addToLunchListPage"
+            android:parentActivityName=".daily_diary_entry"/>
+
+        <activity android:name=".addToDinnerListPage"
+            android:parentActivityName=".daily_diary_entry"/>
+
+        <activity android:name=".goal_main_page"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".addNewGoal"
+            android:parentActivityName=".goal_main_page"/>
+
+        <activity android:name=".updateGoalPage"
+            android:parentActivityName=".goal_main_page"/>
+
+        <activity android:name=".addWaterPage"/>
+
+        <activity android:name=".diet_page"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".exercise_page_main"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".add_new_exercise"
+            android:parentActivityName=".exercise_page_main"/>
+
+    </application>
+
+</manifest>

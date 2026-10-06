@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewFatGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fitness_tracker"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonProfile"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="90dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goToProfilePageMain"
+        android:text="@string/profile"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMeals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMeals"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goToDiaryPageMain"
+        android:text="Diary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfile" />
+
+    <Button
+        android:id="@+id/buttonGoals"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goToGoalsPageMain"
+        android:text="@string/goals"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMeals" />
+
+    <Button
+        android:id="@+id/buttonExercises"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goToExercisePage"
+        android:text="@string/exercises"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoals" />
+
+    <Button
+        android:id="@+id/buttonDiet"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goToDietsPage"
+        android:text="@string/diet"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonExercises" />
+
+    <Button
+        android:id="@+id/buttonRecipes"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/recipes"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

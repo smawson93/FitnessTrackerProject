@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fitness Tracker Project</string>
+    <string name="fitness_tracker">Fitness Tracker</string>
+    <string name="profile">Profile</string>
+    <string name="meals">Meals</string>
+    <string name="goals">Goals</string>
+    <string name="exercises">Exercises</string>
+    <string name="diet">Diet</string>
+    <string name="recipes">Recipes</string>
+    <string name="profile_page">Profile Page</string>
+</resources>

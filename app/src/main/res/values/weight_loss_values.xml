@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string-array name="weight_loss">
+    <item>Maintain Weight</item>
+    <item>Lose half a kg per week</item>
+    <item>Lose one kg per week</item>
+    <item>Gain half a kg per week</item>
+    <item>Gain one kg per week</item>
+</string-array></resources>

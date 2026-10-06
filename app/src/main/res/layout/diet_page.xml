@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Set Diet"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Diet: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <Spinner
+        android:id="@+id/spinnerDietChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:entries="@array/diets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView62"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/tvSlimWorldAllowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Allowance: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editTextNumberSyns"
+        android:layout_width="194dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tvSlimWorldAllowance"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietChoice"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewSyns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Syns"
+        android:textColor="#070404"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberSyns"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietChoice"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvWeightWatchers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Weight: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewExerciseWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvWeightWatchers"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietChoice"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Kg"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewExerciseWeight"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDietChoice"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvWWAllowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Allowance: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeightWatchers"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvWWAllowancePoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvWWAllowance"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeightWatchers"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Points"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvWWAllowancePoints"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeightWatchers"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Daily Calorie Intake: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/textViewUserDAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textViewCalories"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/textViewProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Protein: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalories" />
+
+    <TextView
+        android:id="@+id/textViewFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Fat: "
+        android:textColor="#090303"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProtein" />
+
+    <TextView
+        android:id="@+id/textViewCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Carbs: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFat" />
+
+    <TextView
+        android:id="@+id/textViewProteinAllowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textViewProtein"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalories" />
+
+    <TextView
+        android:id="@+id/textViewFatAllowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textViewFat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProtein" />
+
+    <TextView
+        android:id="@+id/textViewCarbsAllowance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textViewCarb"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFat" />
+
+    <Button
+        android:id="@+id/buttonSetSWDiet"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="Set Slimming World Diet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonSetWWDiet"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="Set Weight Watchers Diet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonSetMacroDiet"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="Set Macros Diet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewProteinGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="grams"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewProteinAllowance"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeightWatchers"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewFatGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="grams"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFatAllowance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProtein"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewCarbsGrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="grams"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCarbsAllowance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFat"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
